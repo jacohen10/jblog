@@ -172,6 +172,7 @@ iframe {
 }
 .section {
   margin-bottom: 30px;
+   text-align: center;
 }
 .section .section-inner {
   background: #fff;
@@ -183,14 +184,27 @@ iframe {
   color: #545e69;
   font-size: 24px;
 }
+.section .content {
+  margin-right: 5px;
+  font-size: 14px;
+  text-align: center;
+}
 .section .content .more-link .fa {
   margin-right: 5px;
   font-size: 14px;
 }
 /* About Section */
 /* Latest Section */
+
+.col-xs-12 {
+  text-align: center;
+}
 .latest .item {
   margin-bottom: 30px;
+  text-align: center;
+}
+.latest .item .row {
+  text-align: center;
 }
 .latest .item .title {
   font-size: 18px;
