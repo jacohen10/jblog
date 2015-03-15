@@ -167,6 +167,10 @@ iframe {
 }
 
 /* ======= Navbar ======= */
+.navbar {
+background-color: #F5F5F5; 
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -182,6 +186,7 @@ iframe {
   padding-right:30px;
   font-size: 1.5em;
 }
+
 /* ======= Sections======= */
 .sections-wrapper {
   padding-top: 60px;
@@ -363,6 +368,13 @@ iframe {
   box-sizing: content-box;
 }
 /* Info Section */
+.contact-me {
+  margin-top: 15px;
+}
+
+.contact-me .fa {
+  color: white;
+}
 .info .fa {
   margin-right: 15px;
   color: #ccd1d6;

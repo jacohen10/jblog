@@ -1,0 +1,53 @@
+
+<div class="container-fluid">
+	<div class="primary col-md-8 col-sm-12 col-xs-12">
+		<section class="about section">
+       	 <div class="section-inner">
+			<p>
+			    <h2 class="heading">
+			 		 <%= @article.title %>
+			 	</h2>
+			</p>
+			 
+			<p>
+				<div class="content">
+					<div class="item">
+						  <%= @article.text %>
+					</div><!--//item-->
+				</div><!--//content-->  
+			</p>
+ 
+
+
+ 			<a class="btn btn-default" 
+ 			  <%= link_to 'Back', articles_path %> 
+ 			</a>
+ 			<a class="btn btn-default" 
+ 			  <%= link_to 'Edit', edit_article_path(@article) %>
+ 			</a>
+
+ 			
+          </div><!--//content-->
+
+		</section><!--//section-inner-->
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="primary col-md-8 col-sm-12 col-xs-12">
+		<section class="about section">
+			<div class="section-inner">
+				<h2>Comments</h2>
+				<hr class="divider" />
+				
+				 <%= render @article.comments %>
+				  	
+
+
+				<h2>Add a comment:</h2>
+				<%= render 'comments/form' %>
+			</div>
+		</section><!--//section-inner-->
+	</div>
+</div>
+           
