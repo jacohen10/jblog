@@ -1,15 +1,10 @@
 
  <% @articles.each do |article| %>
 <div class="container-fluid">
-  <div class="primary col-md-8 col-sm-12 col-xs-12">
+  <div class="primary col-md-12 col-sm-12 col-xs-12">
     <section class="about section">
       <div class="section-inner">
-
-           
          <p>
-         
-     
-       
              <h2 class="heading">
               <%= article.title %>
              </h2>
@@ -33,14 +28,15 @@
                             method: :delete,
                             data: { confirm: 'Are you sure?' } %>
               </a>
-         
-       
+
 
       </div><!--//content-->
-
     </section><!--//section-->
-
    </div>
 
 </div>
+<div class="center">
+   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+</div>
+
 <% end %>
